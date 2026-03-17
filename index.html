@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta Tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- SEO Meta Tags -->
+  <title>SoulSpace Café - Disconnect. Breathe. Feel. | Mohammedia, Morocco</title>
+  <meta name="description"
+    content="A cozy café in Mohammedia where you disconnect from the digital world and reconnect with your soul. Experience mindful coffee, books, and peaceful moments.">
+  <meta name="keywords"
+    content="café, coffee, Mohammedia, Morocco, digital detox, peaceful café, cozy space, mindful coffee, reading space">
+  <meta name="author" content="Bilal Wafae">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="SoulSpace Café - Disconnect. Breathe. Feel.">
+  <meta property="og:description"
+    content="A space to disconnect from the digital world and reconnect with your soul in Mohammedia, Morocco.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://soulspacecafe.com">
+  <meta property="og:image" content="images/soulspace-og-image.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;1,400&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">SoulSpace Café</a>
+
+      <!-- Mobile Menu Toggle -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Navigation Links -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <!-- Background Video -->
+    <video class="hero-video" autoplay muted loop playsinline>
+      <source src="videos/cafe-ambiance.mp4" type="video/mp4">
+      <!-- Fallback image if video doesn't load -->
+      <img src="images/hero-fallback.jpg" alt="Cozy café atmosphere" class="hero-background">
+    </video>
+
+    <!-- Overlay -->
+    <div class="hero-overlay"></div>
+
+    <!-- Hero Content -->
+    <div class="hero-content">
+      <h1 class="hero-title">SoulSpace Café</h1>
+      <p class="hero-subtitle">Disconnect. Breathe. Feel.</p>
+      <div class="hero-buttons">
+        <a href="#philosophy" class="btn btn-primary">Discover the Space</a>
+        <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Philosophy Section -->
+  <section id="philosophy" class="section">
+    <div class="container">
+      <h2 class="section-title">Our Philosophy</h2>
+      <div class="grid grid-2" style="align-items: center; gap: 4rem;">
+        <!-- Philosophy Text -->
+        <div class="reveal">
+          <p style="font-size: 1.25rem; line-height: 1.9; color: var(--brown);">
+            In a world where <span class="accent-text">screens dominate our attention</span> and
+            notifications interrupt our peace, SoulSpace Café offers something rare:
+            <strong>a sanctuary for your soul</strong>.
+          </p>
+          <p style="margin-top: 1.5rem;">
+            We believe that true connection begins when you disconnect from the digital noise.
+            Here, you'll find warm coffee, gentle music, the rustle of pages turning,
+            and the quiet joy of being present. This is not just a café—it's a space where
+            you rediscover yourself, one mindful moment at a time.
+          </p>
+          <p style="margin-top: 1.5rem; font-style: italic; color: var(--terracotta);">
+            "In stillness, we find clarity. In silence, we hear our souls."
+          </p>
+        </div>
+
+        <!-- Philosophy Image -->
+        <div class="reveal" style="animation-delay: 0.2s;">
+          <img src="images/philosophy-cozy-corner.jpg" alt="Cozy reading corner with books and warm lighting"
+            class="img-responsive img-rounded img-shadow" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Spaces Section -->
+  <section id="spaces" class="section"
+    style="background: linear-gradient(135deg, var(--soft-beige) 0%, var(--warm-white) 100%);">
+    <div class="container">
+      <h2 class="section-title">Our Spaces</h2>
+      <p class="section-subtitle">
+        Each corner of SoulSpace is thoughtfully designed to nurture different aspects of your well-being
+      </p>
+
+      <div class="grid grid-4">
+        <!-- Café Space -->
+        <div class="card reveal">
+          <div class="card-icon">☕</div>
+          <h3 class="card-title">The Café</h3>
+          <p class="card-text">
+            Savor artisan coffee and fresh pastries in an atmosphere of warmth and calm.
+            Every cup is crafted with intention.
+          </p>
+        </div>
+
+        <!-- Library Space -->
+        <div class="card reveal" style="animation-delay: 0.1s;">
+          <div class="card-icon">📚</div>
+          <h3 class="card-title">The Library</h3>
+          <p class="card-text">
+            Lose yourself in carefully curated books. From philosophy to poetry,
+            find words that speak to your soul.
+          </p>
+        </div>
+
+        <!-- Green Space -->
+        <div class="card reveal" style="animation-delay: 0.2s;">
+          <div class="card-icon">🌿</div>
+          <h3 class="card-title">Green Space</h3>
+          <p class="card-text">
+            Surrounded by plants and natural light, this space brings the outdoors in,
+            creating a serene environment for reflection.
+          </p>
+        </div>
+
+        <!-- Relaxation Zone -->
+        <div class="card reveal" style="animation-delay: 0.3s;">
+          <div class="card-icon">🧘</div>
+          <h3 class="card-title">Relaxation Zone</h3>
+          <p class="card-text">
+            Soft cushions, gentle lighting, and peaceful music create the perfect
+            setting for meditation and contemplation.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Preview Section -->
+  <section id="menu-preview" class="section">
+    <div class="container">
+      <h2 class="section-title">Menu Highlights</h2>
+      <p class="section-subtitle">
+        Thoughtfully crafted beverages and treats to nourish body and soul
+      </p>
+
+      <!-- Menu Table with colspan/rowspan -->
+      <div style="overflow-x: auto; margin-top: 3rem;">
+        <table
+          style="width: 100%; max-width: 900px; margin: 0 auto; border-collapse: collapse; background: var(--warm-white); border-radius: 8px; overflow: hidden; box-shadow: 0 8px 25px rgba(107, 79, 58, 0.1);">
+          <thead>
+            <tr style="background: var(--brown); color: var(--cream);">
+              <th colspan="3"
+                style="padding: 1.5rem; text-align: center; font-family: var(--font-display); font-size: 1.5rem; letter-spacing: 0.05em;">
+                ✨ SoulSpace Menu ✨
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Coffee Section -->
+            <tr style="background: var(--beige);">
+              <td rowspan="4"
+                style="padding: 1.25rem; font-weight: 700; color: var(--brown); border-right: 2px solid var(--cream); vertical-align: top; font-family: var(--font-display); font-size: 1.25rem;">
+                ☕ Coffee
+              </td>
+              <td style="padding: 1rem 1.25rem; border-bottom: 1px solid var(--cream);">
+                Espresso
+              </td>
+              <td
+                style="padding: 1rem 1.25rem; text-align: right; color: var(--terracotta); font-weight: 600; border-bottom: 1px solid var(--cream);">
+                20 MAD
+              </td>
+            </tr>
+            <tr style="background: var(--warm-white);">
+              <td style="padding: 1rem 1.25rem; border-bottom: 1px solid var(--cream);">
+                Cappuccino
+              </td>
+              <td
+                style="padding: 1rem 1.25rem; text-align: right; color: var(--terracotta); font-weight: 600; border-bottom: 1px solid var(--cream);">
+                28 MAD
+              </td>
+            </tr>
+            <tr style="background: var(--beige);">
+              <td style="padding: 1rem 1.25rem; border-bottom: 1px solid var(--cream);">
+                Latte (Vanilla or Caramel)
+              </td>
+              <td
+                style="padding: 1rem 1.25rem; text-align: right; color: var(--terracotta); font-weight: 600; border-bottom: 1px solid var(--cream);">
+                32 MAD
+              </td>
+            </tr>
+            <tr style="background: var(--warm-white);">
+              <td style="padding: 1rem 1.25rem;">
+                Cold Brew
+              </td>
+              <td style="padding: 1rem 1.25rem; text-align: right; color: var(--terracotta); font-weight: 600;">
+                30 MAD
+              </td>
+            </tr>
+
+            <!-- Tea & Matcha Section -->
+            <tr style="background: var(--beige);">
+              <td rowspan="3"
+                style="padding: 1.25rem; font-weight: 700; color: var(--brown); border-right: 2px solid var(--cream); vertical-align: top; font-family: var(--font-display); font-size: 1.25rem;">
+                🍵 Tea & Matcha
+              </td>
+              <td style="padding: 1rem 1.25rem; border-bottom: 1px solid var(--cream);">
+                Ceremonial Matcha Latte
+              </td>
+              <td
+                style="padding: 1rem 1.25rem; text-align: right; color: var(--terracotta); font-weight: 600; border-bottom: 1px solid var(--cream);">
+                38 MAD
+              </td>
+            </tr>
+            <tr style="background: var(--warm-white);">
+              <td style="padding: 1rem 1.25rem; border-bottom: 1px solid var(--cream);">
+                Herbal Tea Selection
+              </td>
+              <td
+                style="padding: 1rem 1.25rem; text-align: right; color: var(--terracotta); font-weight: 600; border-bottom: 1px solid var(--cream);">
+                22 MAD
+              </td>
+            </tr>
+            <tr style="background: var(--beige);">
+              <td style="padding: 1rem 1.25rem;">
+                Moroccan Mint Tea
+              </td>
+              <td style="padding: 1rem 1.25rem; text-align: right; color: var(--terracotta); font-weight: 600;">
+                18 MAD
+              </td>
+            </tr>
+
+            <!-- Pastries Section -->
+            <tr style="background: var(--warm-white);">
+              <td rowspan="3"
+                style="padding: 1.25rem; font-weight: 700; color: var(--brown); border-right: 2px solid var(--cream); vertical-align: top; font-family: var(--font-display); font-size: 1.25rem;">
+                🥐 Pastries
+              </td>
+              <td style="padding: 1rem 1.25rem; border-bottom: 1px solid var(--cream);">
+                Almond Croissant
+              </td>
+              <td
+                style="padding: 1rem 1.25rem; text-align: right; color: var(--terracotta); font-weight: 600; border-bottom: 1px solid var(--cream);">
+                25 MAD
+              </td>
+            </tr>
+            <tr style="background: var(--beige);">
+              <td style="padding: 1rem 1.25rem; border-bottom: 1px solid var(--cream);">
+                Homemade Banana Bread
+              </td>
+              <td
+                style="padding: 1rem 1.25rem; text-align: right; color: var(--terracotta); font-weight: 600; border-bottom: 1px solid var(--cream);">
+                20 MAD
+              </td>
+            </tr>
+            <tr style="background: var(--warm-white);">
+              <td style="padding: 1rem 1.25rem;">
+                Seasonal Cake Slice
+              </td>
+              <td style="padding: 1rem 1.25rem; text-align: right; color: var(--terracotta); font-weight: 600;">
+                28 MAD
+              </td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr style="background: var(--green); color: var(--cream);">
+              <td colspan="3" style="padding: 1rem; text-align: center; font-style: italic;">
+                All prices include our commitment to quality, sustainability, and your peaceful experience
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="section"
+    style="background: linear-gradient(135deg, var(--beige) 0%, var(--soft-beige) 100%);">
+    <div class="container">
+      <h2 class="section-title">What Our Visitors Say</h2>
+      <p class="section-subtitle">
+        Hear from those who have found their peace at SoulSpace
+      </p>
+
+      <div class="grid grid-3" style="margin-top: 3rem;">
+        <!-- Testimonial 1 -->
+        <div class="card reveal">
+          <p style="font-style: italic; color: var(--dark-brown); margin-bottom: 1.5rem; line-height: 1.8;">
+            "I came here feeling overwhelmed by work and life. After two hours with a book
+            and a perfect cappuccino, I left feeling like myself again. This place is magic."
+          </p>
+          <div style="display: flex; align-items: center; gap: 1rem;">
+            <div
+              style="width: 50px; height: 50px; border-radius: 50%; background: var(--terracotta); display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 1.25rem;">
+              S
+            </div>
+            <div>
+              <p style="font-weight: 700; margin: 0; color: var(--brown);">Sarah M.</p>
+              <p style="font-size: 0.9rem; margin: 0; opacity: 0.7;">Regular Visitor</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="card reveal" style="animation-delay: 0.1s;">
+          <p style="font-style: italic; color: var(--dark-brown); margin-bottom: 1.5rem; line-height: 1.8;">
+            "Finally, a place where I don't feel guilty for putting my phone away.
+            The ambiance, the plants, the silence—it's exactly what my soul needed."
+          </p>
+          <div style="display: flex; align-items: center; gap: 1rem;">
+            <div
+              style="width: 50px; height: 50px; border-radius: 50%; background: var(--green); display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 1.25rem;">
+              K
+            </div>
+            <div>
+              <p style="font-weight: 700; margin: 0; color: var(--brown);">Karim B.</p>
+              <p style="font-size: 0.9rem; margin: 0; opacity: 0.7;">Digital Detox Seeker</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="card reveal" style="animation-delay: 0.2s;">
+          <p style="font-style: italic; color: var(--dark-brown); margin-bottom: 1.5rem; line-height: 1.8;">
+            "The matcha latte is incredible, but what keeps me coming back is the feeling.
+            I've never felt so calm and present in a public space before."
+          </p>
+          <div style="display: flex; align-items: center; gap: 1rem;">
+            <div
+              style="width: 50px; height: 50px; border-radius: 50%; background: var(--brown); display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 1.25rem;">
+              L
+            </div>
+            <div>
+              <p style="font-weight: 700; margin: 0; color: var(--brown);">Laila F.</p>
+              <p style="font-size: 0.9rem; margin: 0; opacity: 0.7;">Mindfulness Enthusiast</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Section -->
+  <section class="section">
+    <div class="container" style="text-align: center;">
+      <h2 class="section-title">Ready to Reconnect?</h2>
+      <p style="font-size: 1.25rem; max-width: 600px; margin: 0 auto 2rem; color: var(--brown);">
+        Visit us today and experience the peace you've been searching for.
+      </p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="contact.html" class="btn btn-primary">Get Directions</a>
+        <a href="gallery.html" class="btn btn-secondary">See Our Space</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <!-- About Section -->
+        <div class="footer-section">
+          <h3>SoulSpace Café</h3>
+          <p>
+            A sanctuary in Mohammedia where you disconnect from the digital world
+            and reconnect with your soul.
+          </p>
+          <p style="margin-top: 1rem;">
+            <strong>Owner:</strong> Bilal Wafae
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <p>📍 Mohammedia, Morocco</p>
+          <p>📧 hello@soulspacecafe.ma</p>
+          <p>📞 +212 605755341</p>
+          <p style="margin-top: 1rem;">
+            <strong>Hours:</strong><br>
+            Mon-Fri: 8AM - 9PM<br>
+            Sat-Sun: 9AM - 10PM
+          </p>
+        </div>
+
+        <!-- Digital Detox Policy -->
+        <div class="footer-section">
+          <h3>Our Commitment</h3>
+          <p><strong>Digital Detox Policy:</strong></p>
+          <ul style="list-style: none; margin-top: 0.5rem;">
+            <li>🔇 No loud phone calls</li>
+            <li>📵 Mindful screen usage</li>
+            <li>🤫 Respect for silence</li>
+            <li>🌿 Peaceful environment</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 SoulSpace Café. All rights reserved. | Designed with 💚 for your soul.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Mobile Menu Toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    // Navbar scroll effect
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+    // Scroll reveal animation
+    const revealElements = document.querySelectorAll('.reveal');
+
+    const revealOnScroll = () => {
+      const windowHeight = window.innerHeight;
+
+      revealElements.forEach(element => {
+        const elementTop = element.getBoundingClientRect().top;
+        const revealPoint = 100;
+
+        if (elementTop < windowHeight - revealPoint) {
+          element.classList.add('active');
+        }
+      });
+    };
+
+    window.addEventListener('scroll', revealOnScroll);
+    revealOnScroll(); // Initial check on page load
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

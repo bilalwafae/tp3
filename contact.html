@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta Tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- SEO Meta Tags -->
+  <title>Contact Us - SoulSpace Café | Visit Us in Mohammedia</title>
+  <meta name="description"
+    content="Visit SoulSpace Café in Mohammedia, Morocco. Get directions, hours, and contact information. We'd love to welcome you.">
+  <meta name="keywords" content="contact, location, Mohammedia café, directions, hours, phone, email">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Contact SoulSpace Café">
+  <meta property="og:description" content="Find us in Mohammedia and experience peaceful moments in our cozy café.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;1,400&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Additional Contact Page Styles -->
+  <style>
+    /* Contact Grid Layout */
+    .contact-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      margin-top: 3rem;
+    }
+
+    .map-container {
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 8px 25px rgba(107, 79, 58, 0.15);
+      height: 450px;
+    }
+
+    .map-container iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .contact-info-card {
+      background: var(--warm-white);
+      padding: 2rem;
+      border-radius: 8px;
+      border: 1px solid rgba(107, 79, 58, 0.1);
+      margin-bottom: 2rem;
+      transition: var(--transition);
+    }
+
+    .contact-info-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(107, 79, 58, 0.1);
+    }
+
+    .contact-icon {
+      font-size: 2rem;
+      color: var(--terracotta);
+      margin-bottom: 1rem;
+    }
+
+    .contact-title {
+      font-family: var(--font-display);
+      color: var(--brown);
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .form-success-message {
+      display: none;
+      padding: 1.5rem;
+      background: linear-gradient(135deg, var(--green), var(--light-green));
+      color: var(--cream);
+      border-radius: 8px;
+      margin-bottom: 2rem;
+      text-align: center;
+      font-size: 1.125rem;
+    }
+
+    .form-success-message.show {
+      display: block;
+      animation: fadeInUp 0.5s ease;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .contact-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">SoulSpace Café</a>
+
+      <!-- Mobile Menu Toggle -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Navigation Links -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="hero"
+    style="height: 60vh; background: linear-gradient(135deg, var(--terracotta) 0%, var(--brown) 100%);">
+    <div class="hero-overlay"
+      style="background: linear-gradient(to bottom, rgba(212, 163, 115, 0.4) 0%, rgba(107, 79, 58, 0.5) 100%);"></div>
+    <div class="hero-content">
+      <h1 class="hero-title" style="color: var(--warm-white); text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);">Visit Us
+      </h1>
+      <p class="hero-subtitle" style="color: var(--cream);">
+        We'd love to welcome you to our sanctuary
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Information Cards -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="section-subtitle">
+        Whether you have questions, want to reserve a space, or simply say hello—we're here for you
+      </p>
+
+      <div class="grid grid-3" style="margin-top: 3rem;">
+        <!-- Location Card -->
+        <div class="contact-info-card reveal">
+          <div class="contact-icon">📍</div>
+          <h3 class="contact-title">Location</h3>
+          <p style="color: var(--dark-brown); line-height: 1.8;">
+            Avenue Mohammed VI<br>
+            Mohammedia 28810<br>
+            Morocco
+          </p>
+        </div>
+
+        <!-- Hours Card -->
+        <div class="contact-info-card reveal" style="animation-delay: 0.1s;">
+          <div class="contact-icon">🕐</div>
+          <h3 class="contact-title">Hours</h3>
+          <p style="color: var(--dark-brown); line-height: 1.8;">
+            <strong>Monday - Friday</strong><br>
+            8:00 AM - 9:00 PM<br><br>
+            <strong>Saturday - Sunday</strong><br>
+            9:00 AM - 10:00 PM
+          </p>
+        </div>
+
+        <!-- Contact Card -->
+        <div class="contact-info-card reveal" style="animation-delay: 0.2s;">
+          <div class="contact-icon">📞</div>
+          <h3 class="contact-title">Reach Out</h3>
+          <p style="color: var(--dark-brown); line-height: 1.8;">
+            <strong>Phone:</strong><br>
+            +212 605755341<br><br>
+            <strong>Email:</strong><br>
+            hello@soulspacecafe.ma
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map and Contact Form Section -->
+  <section class="section" style="background: linear-gradient(135deg, var(--soft-beige) 0%, var(--warm-white) 100%);">
+    <div class="container">
+      <div class="contact-container">
+
+        <!-- Contact Form -->
+        <div class="reveal">
+          <h2 style="color: var(--brown); margin-bottom: 1.5rem; font-family: var(--font-display);">
+            Send Us a Message
+          </h2>
+          <p style="margin-bottom: 2rem; color: var(--dark-brown);">
+            Have a question or want to reserve a space for an event? Fill out the form below and we'll
+            get back to you within 24 hours.
+          </p>
+
+          <!-- Success Message -->
+          <div class="form-success-message" id="successMessage">
+            ✨ Thank you for reaching out! We'll respond to your message soon.
+          </div>
+
+          <!-- Contact Form -->
+          <form id="contactForm">
+            <!-- Name Field -->
+            <div class="form-group">
+              <label for="name" class="form-label">Full Name *</label>
+              <input type="text" id="name" name="name" class="form-input" placeholder="Your name" required>
+            </div>
+
+            <!-- Email Field -->
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address *</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="your.email@example.com"
+                required>
+            </div>
+
+            <!-- Phone Field -->
+            <div class="form-group">
+              <label for="phone" class="form-label">Phone Number</label>
+              <input type="tel" id="phone" name="phone" class="form-input" placeholder="+212 XXX-XXXXXX">
+            </div>
+
+            <!-- Subject Field -->
+            <div class="form-group">
+              <label for="subject" class="form-label">Subject *</label>
+              <select id="subject" name="subject" class="form-select" required>
+                <option value="">Select a subject</option>
+                <option value="general">General Inquiry</option>
+                <option value="reservation">Space Reservation</option>
+                <option value="event">Private Event</option>
+                <option value="workshop">Workshop Information</option>
+                <option value="feedback">Feedback</option>
+                <option value="partnership">Partnership Opportunity</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <!-- Message Field -->
+            <div class="form-group">
+              <label for="message" class="form-label">Message *</label>
+              <textarea id="message" name="message" class="form-textarea" placeholder="Tell us how we can help you..."
+                required></textarea>
+            </div>
+
+            <!-- Newsletter Checkbox -->
+            <div class="form-group" style="display: flex; align-items: center; gap: 0.75rem;">
+              <input type="checkbox" id="newsletter" name="newsletter" style="width: auto; margin: 0;">
+              <label for="newsletter" style="margin: 0; font-weight: 400;">
+                Subscribe to our newsletter for events, workshops, and mindful living tips
+              </label>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">
+              Send Message
+            </button>
+          </form>
+        </div>
+
+        <!-- Google Maps -->
+        <div class="reveal" style="animation-delay: 0.2s;">
+          <h2 style="color: var(--brown); margin-bottom: 1.5rem; font-family: var(--font-display);">
+            Find Us Here
+          </h2>
+          <p style="margin-bottom: 2rem; color: var(--dark-brown);">
+            Located in the heart of Mohammedia, we're easily accessible and just a few minutes from
+            the city center. Look for the warm lights and plants in the windows!
+          </p>
+
+          <div class="map-container">
+            <!-- Google Maps iframe for Mohammedia, Morocco -->
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106258.72836890842!2d-7.459651849999999!3d33.6866394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7cd6e27d88a35%3A0x20e94a97f2f2c14!2sMohammedia%2C%20Morocco!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
+              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              title="SoulSpace Café Location in Mohammedia, Morocco">
+            </iframe>
+          </div>
+
+          <!-- Directions Info -->
+          <div
+            style="margin-top: 2rem; padding: 1.5rem; background: var(--warm-white); border-radius: 8px; border-left: 4px solid var(--terracotta);">
+            <h4 style="color: var(--brown); margin-bottom: 1rem;">Parking & Transportation</h4>
+            <p style="color: var(--dark-brown); line-height: 1.8;">
+              <strong>🚗 By Car:</strong> Street parking available. Dedicated parking lot 2 minutes walk away.<br>
+              <strong>🚌 By Public Transport:</strong> Bus lines 800, 906, and 900 stop nearby.<br>
+              <strong>🚶 On Foot:</strong> 15-minute walk from Mohammedia train station.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+
+      <div style="max-width: 800px; margin: 0 auto;">
+        <div class="grid grid-2" style="gap: 2rem; margin-top: 2rem;">
+
+          <!-- FAQ 1 -->
+          <div class="card reveal">
+            <h4 style="color: var(--terracotta); margin-bottom: 1rem;">Do I need a reservation?</h4>
+            <p style="color: var(--dark-brown);">
+              Walk-ins are always welcome! However, we recommend reservations for our meditation sessions,
+              workshops, and if you're planning to visit during peak hours (weekends 2-5 PM).
+            </p>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="card reveal" style="animation-delay: 0.1s;">
+            <h4 style="color: var(--terracotta); margin-bottom: 1rem;">Can I work on my laptop?</h4>
+            <p style="color: var(--dark-brown);">
+              We have a designated quiet work area with WiFi, but we encourage you to use it mindfully.
+              Other zones are screen-free to maintain the peaceful atmosphere.
+            </p>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="card reveal" style="animation-delay: 0.2s;">
+            <h4 style="color: var(--terracotta); margin-bottom: 1rem;">Do you host private events?</h4>
+            <p style="color: var(--dark-brown);">
+              Yes! We host book clubs, meditation groups, small workshops, and intimate gatherings.
+              Contact us to discuss your event needs and availability.
+            </p>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="card reveal" style="animation-delay: 0.3s;">
+            <h4 style="color: var(--terracotta); margin-bottom: 1rem;">Are you child-friendly?</h4>
+            <p style="color: var(--dark-brown);">
+              We welcome families! We ask that children respect the quiet atmosphere.
+              We have a small children's book corner and coloring supplies available.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="section" style="background: linear-gradient(135deg, var(--brown) 0%, var(--terracotta) 100%);">
+    <div class="container" style="text-align: center;">
+      <h2 class="section-title" style="color: var(--cream);">We Can't Wait to Meet You</h2>
+      <p style="font-size: 1.25rem; max-width: 700px; margin: 0 auto 2rem; color: var(--warm-white);">
+        Your journey to inner peace and meaningful connection starts here.
+        Come as you are—we'll have the coffee ready.
+      </p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="index.html" class="btn btn-primary"
+          style="background: var(--cream); color: var(--brown); border-color: var(--cream);">
+          Explore Our Space
+        </a>
+        <a href="gallery.html" class="btn btn-secondary" style="border-color: var(--cream); color: var(--cream);">
+          View Gallery
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <!-- About Section -->
+        <div class="footer-section">
+          <h3>SoulSpace Café</h3>
+          <p>
+            A sanctuary in Mohammedia where you disconnect from the digital world
+            and reconnect with your soul.
+          </p>
+          <p style="margin-top: 1rem;">
+            <strong>Owner:</strong> Bilal Wafae
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <p>📍 Mohammedia, Morocco</p>
+          <p>📧 hello@soulspacecafe.ma</p>
+          <p>📞 +212 605755341</p>
+          <p style="margin-top: 1rem;">
+            <strong>Hours:</strong><br>
+            Mon-Fri: 8AM - 9PM<br>
+            Sat-Sun: 9AM - 10PM
+          </p>
+        </div>
+
+        <!-- Digital Detox Policy -->
+        <div class="footer-section">
+          <h3>Our Commitment</h3>
+          <p><strong>Digital Detox Policy:</strong></p>
+          <ul style="list-style: none; margin-top: 0.5rem;">
+            <li>🔇 No loud phone calls</li>
+            <li>📵 Mindful screen usage</li>
+            <li>🤫 Respect for silence</li>
+            <li>🌿 Peaceful environment</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 SoulSpace Café. All rights reserved. | Designed with 💚 for your soul.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Mobile Menu Toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    // Navbar scroll effect
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+    // Scroll reveal animation
+    const revealElements = document.querySelectorAll('.reveal');
+
+    const revealOnScroll = () => {
+      const windowHeight = window.innerHeight;
+
+      revealElements.forEach(element => {
+        const elementTop = element.getBoundingClientRect().top;
+        const revealPoint = 100;
+
+        if (elementTop < windowHeight - revealPoint) {
+          element.classList.add('active');
+        }
+      });
+    };
+
+    window.addEventListener('scroll', revealOnScroll);
+    revealOnScroll(); // Initial check on page load
+
+    // Contact Form Handling
+    const contactForm = document.getElementById('contactForm');
+    const successMessage = document.getElementById('successMessage');
+
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      // Get form data
+      const formData = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        phone: document.getElementById('phone').value,
+        subject: document.getElementById('subject').value,
+        message: document.getElementById('message').value,
+        newsletter: document.getElementById('newsletter').checked
+      };
+
+      // In a real application, you would send this data to a server
+      console.log('Form submitted:', formData);
+
+      // Show success message
+      successMessage.classList.add('show');
+
+      // Reset form
+      contactForm.reset();
+
+      // Scroll to success message
+      successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+      // Hide success message after 5 seconds
+      setTimeout(() => {
+        successMessage.classList.remove('show');
+      }, 5000);
+    });
+  </script>
+</body>
+
+</html>
